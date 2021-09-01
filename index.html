@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrology Promises App</title>
+  </head>
+  <body class="bg-gradient-to-t from-purple-800 to-blue-700">
+    <div class="flex flex-col h-screen">
+			<!-- Astrology sign picker -->
+      <div class="grid place-items-center w-4/5 mx-auto p-2 my-5 sm:my-auto bg-white-600 border-4 border-indigo-400 bg-gray-50 rounded-xl shadow-2xl space-y-3 text-center">
+				<h1 class="text-4xl font-bold uppercase text-indigo-600 transition duration-500">Choose your sign</h1>
+        <h2 class="text-xl text-gray-700 transition duration-500">Get your daily horoscrope.</h2>
+        <div class="flex flex-wrap space-around gap-y-2 justify-between">
+            <button type="button" data-astro-sign="Aries" class="astro-btn bg-blue-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-blue-600 transition duration-200 each-in-out">Aries</button>
+            <button type="button" data-astro-sign="Taurus" class="astro-btn bg-gray-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-600 transition duration-200 each-in-out">Taurus</button>
+            <button type="button" data-astro-sign="Gemini" class="astro-btn bg-green-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-600 transition duration-200 each-in-out">Gemini</button>
+            <button type="button" data-astro-sign="Cancer" class="astro-btn bg-green-600 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-700 transition duration-200 each-in-out">Cancer</button>
+            <button type="button" data-astro-sign="Leo" class="astro-btn bg-yellow-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-yellow-600 transition duration-200 each-in-out">Leo</button>
+            <button type="button" data-astro-sign="Virgo" class="astro-btn bg-red-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-red-600 transition duration-200 each-in-out">Virgo</button>
+            <button type="button" data-astro-sign="Libra" class="astro-btn bg-gray-700 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-800 transition duration-200 each-in-out">Libra</button>
+            <button type="button" data-astro-sign="Scorpio" class="astro-btn bg-blue-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-blue-600 transition duration-200 each-in-out">Scorpio</button>
+            <button type="button" data-astro-sign="Sagittarius" class="astro-btn bg-gray-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-600 transition duration-200 each-in-out">Sagittarius</button>
+            <button type="button" data-astro-sign="Capricorn" class="astro-btn bg-green-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-600 transition duration-200 each-in-out">Capricorn</button>
+            <button type="button" data-astro-sign="Aquarius" class="astro-btn bg-green-600 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-700 transition duration-200 each-in-out">Aquarius</button>
+            <button type="button" data-astro-sign="Pisces" class="astro-btn bg-yellow-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-yellow-600 transition duration-200 each-in-out">Pisces</button>
+        </div>
+			</div>
+      <!-- Astrology sign results -->
+      <div id="horoscope" class="grid place-items-center w-4/5 mx-auto p-2 my-5 sm:my-auto bg-white-600 border-4 border-indigo-400 bg-gray-50 rounded-xl shadow-2xl space-y-3 text-center">  
+        Loading...
+      </div>
+		</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
